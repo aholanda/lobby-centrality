@@ -1,0 +1,16 @@
+graph {
+      label="Figure 1 - Cut of an arbitrary graph to demonstrate Lobby calculation.\nThe vertex degree is showed between parentheses";
+
+      a [fontcolor="white",fillcolor="black", style="filled"]
+      b [label="b (4)"]
+      c [label="c (3)"]
+      d [label="d (18)"]
+      e [label="e (21)"]
+
+      a -- b
+      a -- c
+      a -- d
+      a -- e
+      b -- e
+      d -- e
+}

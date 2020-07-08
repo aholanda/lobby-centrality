@@ -1,14 +1,19 @@
 # Lobby Centrality
 
+ Given a set of neighbors from a vertex _v_, the Lobby centrality or
+h-index is calculated by ranking the neighbors of _v_ according to
+their degrees in a decreasing order, and selecting the last position
+where its degree is less or equal than its position value.
 
-In a graph, given a set of neighbors from a vertex _v_, the Lobby
-centrality or h-index is calculated by ranking the neighbors according
-to their degrees in a decreasing order, and selecting the last
-position where its degree is less or equal than its position value.
+The Fig. 1 presents a cut of an arbitrary graph, containing only
+the vertices of interest, to demonstrate the Lobby index calculation of
+vertex _a_.
 
-For example, if we have the following list of neighbors, the Lobby
-index is **3** because it is the last position where the degree of
-the neighbor is greater than its position in the ranking.
+![Arbitrary graph](graph.png)
+
+The list of _a_ neighbors is ordered by degree in the table. The Lobby
+index of _a_ is **3** because it is the last position where the degree
+of the neighbor is greater than its position in the ranking.
 
 
 | neighbor | position | degree |
@@ -19,32 +24,9 @@ the neighbor is greater than its position in the ranking.
 | "c"      | 4        | 3      |
 
 
-![Alt text](https://g.gravizo.com/source/custom_mark10?https%3A%2F%2Fraw.githubusercontent.com%2Fajholanda%2Flobby-centrality%2Fmaster%2FREADME.md%3Ftoken%3DAAPQ5SAJMRTKUHEZ5WTHCMC7AX6EU)
-<details>
-<summary></summary>
-custom_mark10
-  digraph G {
-    size ="4,4";
-    main [shape=box];
-    main -> parse [weight=8];
-    parse -> execute;
-    main -> init [style=dotted];
-    main -> cleanup;
-    execute -> { make_string; printf};
-    init -> make_string;
-    edge [color=red];
-    main -> printf [style=bold,label="100 times"];
-    make_string [label="make a string"];
-    node [shape=box,style=filled,color=".7 .3 1.0"];
-    execute -> compare;
-  }
-custom_mark10
-</details>
+The Python3 code to process the table data should be:
 
-
-The Python3 code to process the data should be
-
-````
+```python
 def lobby(v2degs):
     '''Return the Lobby index from a dictionary of vertices and degrees'''
     l = 0 # Lobby index
@@ -59,7 +41,7 @@ def lobby(v2degs):
 v2degs = {"b": 4, "c": 3, "d": 18, "e": 21 }
 print("The lobby index is {}".format(lobby(v2degs)))
 
-````
+```
 
 ## References
 
@@ -75,3 +57,6 @@ print("The lobby index is {}".format(lobby(v2degs)))
 3. M. G. Campiteli, A. J. Holanda, L. D. H. Soares, P. R. C. Soles, O. Kinouchi.
   [Lobby index as a network centrality measure](Lobby index as a network centrality measure).
   Physica A, 394, 2014.
+
+---
+Feel free to send suggestions or corrections via [issue](https://github.com/ajholanda/lobby-centrality/issues).
