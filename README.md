@@ -19,7 +19,7 @@ the neighbor is greater than its position in the ranking.
 | "c"      | 4        | 3      |
 
 
-![Alt text](https://g.gravizo.com/source/custom_mark10?https:%2F%2Fraw.githubusercontent.com%2Fajholanda%2Flobby-centrality%2Fmaster%2FREADME.md)
+![Alt text](https://g.gravizo.com/source/custom_mark10?https%3A%2F%2Fraw.githubusercontent.com%2Fajholanda%2Flobby-centrality%2Fmaster%2FREADME.md%3Ftoken%3DAAPQ5SAJMRTKUHEZ5WTHCMC7AX6EU)
 <details>
 <summary></summary>
 custom_mark10
