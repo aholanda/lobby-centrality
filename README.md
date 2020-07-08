@@ -11,10 +11,9 @@ vertex _a_.
 
 ![Arbitrary graph](graph.png)
 
-The list of _a_ neighbors is ordered by degree in the table. The Lobby
-index of _a_ is **3** because it is the last position where the degree
-of the neighbor is greater than its position in the ranking.
-
+The list of neighbors of vertex _a_ is ordered by degree in the table. The Lobby
+index of vertex _a_ is **3** because it is the last position where the degree
+of its neighbor is greater than its position in the ranking.
 
 | neighbor | position | degree |
 |:--------:|:--------:|:------:|
@@ -22,7 +21,6 @@ of the neighbor is greater than its position in the ranking.
 | "d"      | 2        | 18     |
 | "b"      | **3**    | **4**  |
 | "c"      | 4        | 3      |
-
 
 The Python3 code to process the table data should be:
 
