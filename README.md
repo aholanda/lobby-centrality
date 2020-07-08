@@ -53,7 +53,7 @@ print("The lobby index is {}".format(lobby(v2degs)))
     Physica A, 388 (11), 2009.
 
 3. M. G. Campiteli, A. J. Holanda, L. D. H. Soares, P. R. C. Soles, O. Kinouchi.
-  [Lobby index as a network centrality measure](Lobby index as a network centrality measure).
+  [Lobby index as a network centrality measure](https://www.sciencedirect.com/science/article/pii/S0378437113005839).
   Physica A, 394, 2014.
 
 ---
